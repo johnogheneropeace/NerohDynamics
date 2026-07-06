@@ -5,6 +5,9 @@
    ========================================================================== */
 (function () {
   'use strict';
+  /* Confirm the script is running, which switches on the reveal animation.
+     If this file is ever missing, content stays visible instead of blank. */
+  document.documentElement.classList.add('reveal-init');
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ---- current year ---- */
